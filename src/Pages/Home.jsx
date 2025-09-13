@@ -7,7 +7,13 @@ import vector from '../assets/Vector.png'
 import service1 from '../assets/services1.png'
 import service2 from '../assets/services2.png'
 import service3 from '../assets/services3.png'
+import whatwedo1 from '../assets/whatwedo1.jpg'
+import whatwedo2 from '../assets/whatwedo2.jpg'
+import whatwedo3 from '../assets/whatwedo3.jpg'
+import whatwedo4 from '../assets/whatwedo4.jpg'
 
+
+ 
 const Home = () => {
   return (
     <div>
@@ -123,6 +129,131 @@ const Home = () => {
 
 
         </div>
+      </section>
+
+
+      {/* Work section start */}
+      <section id="work">
+        <div className="py-16 px-6 md:px-12 lg:px-24">
+          {/* Heading */}
+          <div className=" mb-12">
+            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+              Let’s see <span className="text-purple-800">what</span> we’ve been{" "}
+              <br /> working on
+            </h2>
+            <p className="mt-4 text-[20px] text-gray-800 max-w-2xl ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere diam
+              amet lacus in. Sed nibh eget lacinia nunc.
+            </p>
+
+            {/* Filter Buttons */}
+            <div className="flex flex-wrap gap-4 mt-6">
+              <button className="px-8 py-3 rounded-full bg-transparent font-semibold text-[17px] text-purple-600 border border-purple-600 text-sm hover:bg-purple-600 hover:text-white transition">
+                Website
+              </button>
+              <button className="px-8 py-3 rounded-full bg-transparent font-semibold text-[17px] text-purple-600 border border-purple-600 text-sm hover:bg-purple-600 hover:text-white transition">
+                UI/UX
+              </button>
+              <button className="px-8 py-3 rounded-full bg-transparent font-semibold text-[17px] text-purple-600 border border-purple-600 text-sm hover:bg-purple-600 hover:text-white transition">
+                PWA’s
+              </button>
+            </div>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid justify-center gap-8 sm:grid-cols-2 lg:grid-cols-2">
+            {/* Project 1 */}
+            <div>
+              <div className="bg-white w-72 shadow-md hover:shadow-lg hover:translate-y-[-10px] duration-300 rounded-lg overflow-hidden">
+              <a href="" className="">
+                <img
+                src={whatwedo1}
+                alt="SnapChat Clone"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-medium text-gray-900">SnapChat Clone</h3>
+                <a
+                  href="#"
+                  className="text-sm text-indigo-600 mt-2 inline-block hover:underline"
+                >
+                  View Project
+                </a>
+              </div>
+              </a>
+            </div>
+            </div>
+
+            {/* Project 2 */}
+           <div className="mt-20">
+             <div className="bg-white w-72 shadow-md hover:shadow-lg hover:translate-y-[-10px] duration-300 rounded-lg overflow-hidden">
+              <a href="">
+                <img
+                src={whatwedo2}
+                alt="Drumloop Production"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-medium text-gray-900">
+                  Drumloop Production
+                </h3>
+                <a
+                  href="#"
+                  className="text-sm text-indigo-600 mt-2 inline-block hover:underline"
+                >
+                  View Project
+                </a>
+              </div>
+              </a>
+            </div>
+           </div>
+
+            {/* Project 3 */}
+            <div>
+              <div className="bg-white w-72 shadow-md hover:shadow-lg hover:translate-y-[-10px] duration-300 rounded-lg overflow-hidden">
+              <a href="">
+                 <img
+                src={whatwedo3}
+                alt="Pagoda Partners"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-medium text-gray-900">Pagoda Partners</h3>
+                <a
+                  href="#"
+                  className="text-sm text-indigo-600 mt-2 inline-block hover:underline"
+                >
+                  View Project
+                </a>
+              </div>
+              </a>
+            </div>
+            </div>
+
+            {/* Project 4 */}
+            <div>
+              <div className="bg-white w-72 shadow-md hover:shadow-lg hover:translate-y-[-10px] duration-300 rounded-lg overflow-hidden">
+             <a href="">
+              <img
+                src={whatwedo4}
+                alt="E-learning App"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-medium text-gray-900">E-learning App</h3>
+                <a
+                  href="#"
+                  className="text-sm text-indigo-600 mt-2 inline-block hover:underline"
+                >
+                  View Project
+                </a>
+              </div>
+             </a>
+            </div>
+            </div>
+          </div>
+        </div>
+
       </section>
 
 
