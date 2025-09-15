@@ -11,6 +11,7 @@ import whatwedo1 from '../assets/whatwedo1.jpg'
 import whatwedo2 from '../assets/whatwedo2.jpg'
 import whatwedo3 from '../assets/whatwedo3.jpg'
 import whatwedo4 from '../assets/whatwedo4.jpg'
+import { Link } from "react-router-dom";
 
 
 
@@ -35,15 +36,15 @@ const Home = () => {
 
               {/* Buttons */}
               <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
-                <button
+                <Link to='/whatwedo'
                   className=" py-3 px-8 text-white rounded-full bg-pink-400 hover:bg-pink-500 border-none font-semibold"
                 >
                   See How
-                </button>
+                </Link>
 
-                <button className="flex items-center justify-center gap-2 text-purple-800 text-[20px] font-semibold hover:underline">
+                <Link to='/contact' className="flex items-center justify-center gap-2 text-purple-800 text-[20px] font-semibold hover:underline">
                   Lets connect <ArrowRight size={20} />
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -257,11 +258,11 @@ const Home = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <button
+            <Link to='/work'
               className=" py-3 px-16 mt-5 md:mt-10 text-white rounded-full bg-pink-400 hover:bg-pink-500 border-none font-semibold transition-all duration-300"
             >
               More
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -272,13 +273,15 @@ const Home = () => {
             <h1 className="text-3xl md:text-5xl font-semibold text-gray-800 text-center">
               We can’t wait to work <br /> with <span className="text-purple-600">You</span>
             </h1>
-            <button className="mt-6 px-8 py-3 text-[18px] font-semibold  bg-pink-400 text-white rounded-full shadow hover:bg-pink-500 transition duration-300">
+            <Link to='/contact' className="mt-6 px-8 py-3 text-[18px] font-semibold  bg-pink-400 text-white rounded-full shadow hover:bg-pink-500 transition duration-300">
               Lets connect
-            </button>
+            </Link>
           </div>
         </div>
 
       </section>
+
+      {/* footer */}
       <section id="footer" className="bg-gray-100 py-10 px-4 sm:px-8 md:px-16 mt-3">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {/* Syntrax Info */}
@@ -309,8 +312,8 @@ const Home = () => {
           <div className="flex flex-col items-start md:items-start text-center md:text-left">
             <h3 className="font-semibold text-2xl text-gray-900 mb-2">About</h3>
             <ul className="text-gray-800 text-[19px]  space-y-2">
-              <li><a href="#" className="hover:underline hover:text-pink-400">About Us</a></li>
-              <li><a href="#" className="hover:underline hover:text-pink-400">Contact us</a></li>
+              <li><Link to='/about'  className="hover:underline hover:text-pink-400">About Us</Link></li>
+              <li><Link to='/contact'  className="hover:underline hover:text-pink-400">Contact us</Link></li>
             </ul>
           </div>
         </div>

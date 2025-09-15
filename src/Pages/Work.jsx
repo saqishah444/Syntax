@@ -13,7 +13,7 @@ const Work = () => {
   return (
     <div>
       <section id='hero'>
-        <div className="flex flex-col items-center justify-center min-h-screen bg-white p-4">
+        <div className="flex flex-col items-center justify-center bg-white p-4">
           <h1 className="text-3xl md:text-5xl font-semibold text-gray-800 text-center mb-4">
             What <span className="text-purple-600">we’ve</span> been working on
           </h1>
@@ -159,7 +159,7 @@ const Work = () => {
         <div className='container mx-auto py-5  md:py-52'>
           <div className=' text-center '>
             <h2 className='text-3xl md:text-5xl font-semibold mb-5 md:mb-10'>Got a <span className='text-purple-500'>Project</span>  for us ? Lets's  Connect</h2>
-            <Link to="#" className="mt-6 px-8 py-3 text-[18px] font-semibold  bg-pink-400 text-white rounded-full shadow hover:bg-pink-500 transition duration-300">
+            <Link to="/contact" className="mt-6 px-8 py-3 text-[18px] font-semibold  bg-pink-400 text-white rounded-full shadow hover:bg-pink-500 transition duration-300">
               Contact Us
             </Link>
 
@@ -201,8 +201,8 @@ const Work = () => {
           <div className="flex flex-col items-start md:items-start text-center md:text-left">
             <h3 className="font-semibold text-2xl text-gray-900 mb-2">About</h3>
             <ul className="text-gray-800 text-[19px]  space-y-2">
-              <li><a href="#" className="hover:underline hover:text-pink-400">About Us</a></li>
-              <li><a href="#" className="hover:underline hover:text-pink-400">Contact us</a></li>
+              <li><Link to='/about' href="#" className="hover:underline hover:text-pink-400">About Us</Link></li>
+              <li><Link to='/contact' href="#" className="hover:underline hover:text-pink-400">Contact us</Link></li>
             </ul>
           </div>
         </div>

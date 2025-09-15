@@ -4,6 +4,7 @@ import servicespage1 from '../assets/servicespage1.png'
 import servicespage2 from '../assets/servicespage2.png'
 import servicespage3 from '../assets/servicespage3.png'
 import { ArrowRight, Facebook, Twitter, Instagram, Dribbble, Linkedin } from "lucide-react";
+import { Link } from 'react-router-dom'
 
 
 const Whatwedo = () => {
@@ -21,9 +22,9 @@ const Whatwedo = () => {
               We create user experience with accessibility in mind.<br />
               We are here to give modern solutions to the modern problems.
             </p>
-            <button className="mb-4 px-8 py-3 bg-pink-400 text-white rounded-full shadow hover:bg-pink-500 transition duration-300">
+            <Link to='/work' className="mb-4 px-8 py-3 bg-pink-400 text-white rounded-full shadow hover:bg-pink-500 transition duration-300">
               Our Work
-            </button>
+            </Link>
             <img src={servicesv2} alt="Priority Illustration" className="max-w-md w-full" />
           </div>
 
@@ -171,8 +172,8 @@ const Whatwedo = () => {
           <div className="flex flex-col items-start md:items-start text-center md:text-left">
             <h3 className="font-semibold text-2xl text-gray-900 mb-2">About</h3>
             <ul className="text-gray-800 text-[19px]  space-y-2">
-              <li><a href="#" className="hover:underline hover:text-pink-400">About Us</a></li>
-              <li><a href="#" className="hover:underline hover:text-pink-400">Contact us</a></li>
+              <li><Link to='/about' className="hover:underline hover:text-pink-400">About Us</Link></li>
+              <li><Link to='/contact' className="hover:underline hover:text-pink-400">Contact us</Link></li>
             </ul>
           </div>
         </div>
